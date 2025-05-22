@@ -1,0 +1,45 @@
+
+.logo img{
+    width: 50px;
+}
+.navbar{
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    left: -19.5%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,black 75%,white 25%);
+}
+.animate__animated{
+    animation-duration: 2s;
+    
+}
+.layer{
+    background-color: rgba(255, 255, 255, 0.61);
+    top:100%;
+    left:0;
+    right: 0;
+}
+.row .col-lg-3:hover .layer{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 1s;
+}
+ul li{
+    cursor: pointer;
+}
+input{
+    width: 28%;
+    margin: 20px;
+}
+
+#contactPage #contactData div div{
+    width: 35%;
+    
+}
+#contactPage #contactData button{
+    width: 8%;
+}

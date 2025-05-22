@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-black">
+
+<nav class="navbar d-flex flex-column justify-content-between align-content-end pe-3 z-3">
+    <div class="logo">
+      <img src="./logo.png" alt="logo" class="">
+    </div>
+    <div class="position-absolute start-0 p-1">
+  <div class="p-4">
+    <ul class="text-light list-unstyled">
+        <li class="py-2 fs-5 animate__animated animate__backInUp" id="search">Search</li>
+        <li class="py-2 fs-5 animate__animated animate__backInUp" id="categories">Categories</li>
+        <li class="py-2 fs-5 animate__animated animate__backInUp" id="area">Area</li>
+        <li class="py-2 fs-5 animate__animated animate__backInUp" id="ingredients">Ingredients</li>
+        <li class="py-2 fs-5 animate__animated animate__backInUp" id="contact">Contact Us</li>
+    </ul>
+  </div>
+</div>
+<div class="position-absolute start-0 bottom-0 text-white ps-3">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-solid fa-globe"></i>
+  <p>Copyright Â© 2019 All Rights </br>
+Reserved.</p>
+</div>
+  <div class="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button type="button" class="btn-close d-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="icons">
+    <i class="fa-solid fa-globe text-light"></i>
+    <i class="fa-solid fa-share-nodes text-light"></i>
+  </div>
+</nav>
+<section class="bg-light bg-black">
+  <div class="row gy-5 gx-3 container m-auto" id="data">
+   
+  </div>
+
+</section>
+  <div id="desc" class="d-none">
+    
+  </div>
+<div id="searchPage" class="bg-black mb-4 d-none">
+  <div class="container m-auto d-flex flex-row justify-content-around">
+  <input id="nameSearch" class="form-control bg-black" type="text" placeholder="Search By Name" aria-label="default input example">
+  <input id="letterSearch" class="form-control bg-black" type="text" placeholder="Search By First Letter" aria-label="default input example">
+</div>
+<div class="row gy-5 gx-3 container m-auto" id="searchData">
+   
+  </div>
+
+</div>
+<div id="categoriesPage" class="d-none">
+<div class="row gy-5 gx-3 container m-auto" id="categoriesData">
+   
+  </div>
+</div>
+<div id="areaPage" class="d-none">
+<div class="row gy-5 gx-3 container m-auto" id="areaData">
+   
+  </div>
+</div>
+<div id="ingredientsPage" class="d-none">
+<div class="row gy-5 gx-3 container m-auto" id="ingredientsData">
+   
+  </div>
+</div>
+<div id="contactPage" class="d-none mt-5">
+<div class="d-flex flex-column justify-content-center align-content-center container m-auto" id="contactData">
+   <div class="container m-auto d-flex flex-row flex-wrap justify-content-around align-content-center">
+    <div>
+      <input id="name" class="form-control bg-white" type="text" placeholder="Enter Your Name" aria-label="default input example">
+  <p class="text-danger fw-bold d-none" id="nameMsg">Name must contain at least 3 characters</p>
+    </div>
+    <div>
+<input id="email" class="form-control bg-white" type="email" placeholder="Enter Your Email" aria-label="default input example">
+  <p class="text-danger fw-bold d-none" id="emailMsg">Email must be valid</p>
+    </div>
+    <div>
+<input id="phone" class="form-control bg-white" type="num" placeholder="Enter Your Phone" aria-label="default input example">
+<p class="text-danger fw-bold d-none" id="phoneMsg">Phone number must be valid</p>
+    </div>
+    <div>
+      <input id="age" class="form-control bg-white" type="number" placeholder="Enter Your Age" aria-label="default input example">
+      <p class="text-danger fw-bold d-none" id="ageMsg">You must be above 9 years</p>
+    </div>
+    <div>
+  <input id="password" class="form-control bg-white" type="password" placeholder="Enter Your Password" aria-label="default input example">
+<p class="text-danger fw-bold d-none" id="passwordMsg">Password must be valid</p>    
+</div>
+<div>
+<input id="repassword" class="form-control bg-white" type="password" placeholder="Repassword" aria-label="default input example">
+<p class="text-danger fw-bold d-none" id="repasswordMsg">You must retype your password</p>
+</div>
+  
+    
+
+  
+  
+</div>
+
+<div class="text-center m-3">
+  <p class="text-success fw-bold d-none" id="successMsg">Succeeded</p>
+<button type="button" class="btn btn-danger" id="submit">Submit</button>
+</div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
