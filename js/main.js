@@ -92,6 +92,7 @@ search.addEventListener('click' , function(){
     navButton.classList.remove('d-none')
     desc.classList.add('d-none')
     ingredientsPage.classList.add('d-none')
+    categoriesPage.classList.add('d-none')
     navBar.style.cssText = "left: -19.5%;"
     
 })
